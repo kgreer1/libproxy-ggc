@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+<title>Georgia Gwinnett College Library Off Campus Access</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+body
+{
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Segoe UI", Verdana, Tahoma, Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+h1 {
+  color : #00704a;
+  font-size : 28px;
+  line-height : 1em;
+	margin-top : 0;
+	margin-bottom : 20px;
+}
+h2 {
+	color : #212326;
+	font-size : 18px;
+	line-height : 1.35em;
+	margin : 20px 0 10px;
+}
+p {
+	margin : 0 10 10px;
+}
+a
+{
+  color: #3864a5;
+}
+a:visited {
+	color: #6591d1;
+}
+input[type="text"], input[type="password"]
+{
+  width: 200px;
+  border: solid 1px #707070;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 1.6em;
+}
+
+input[type="submit"]
+{
+  background-color: #d8d4d1;
+  border: solid 1px #707070;
+  padding: 0px 8px 0px 8px;
+  margin: 5px 0 5px 0;
+  font-size: 100%;
+  height: 1.6em;
+  width:100px;
+}
+</style>
+</head>
+
+<body>
+<div>
+  <div class="logo">
+  <a href="http://www.ggc.edu/academics/library"><img style="max-width:100%;height:auto;border:0;margin-bottom:20px;" alt="Kaufman Library logo" src="https://www.ggc.edu/academics/library/image/library-logo-horz.jpg" /></a>
+  </div>
+<h1>Login for Off-Campus Access</h1>
+
+<p>Off-campus access to the requested resource is restricted to current GGC students, faculty and staff.<br />
+To continue, please login with your GGC username and password (same login as D2L, campus network and email).</p>
+
+<form action="/login" method="post">
+  <input type="hidden" name="url" value="^U" />
+  <p><label for="username">Username:</label>
+  <input type="text" name="user" id="username" />@ggc.edu</p>
+  <p><label for="password">Password:</label>
+  <input type="password" name="pass" id="password" /></p>
+  <p><input type="submit" value="Login" /></p>
+</form>
+
+<a href="https://my.ggc.edu/web/guest/password-change-reset">Forgot Your Password?</a><br />
+<a href="http://www.ggc.edu/academics/library">Return to Library Home Page</a><br />
+<p>Experiencing access problems? <a href="mailto:kgreer1@ggc.edu?Subject=Off Campus Access Issue" title="email us" id="email us">Send us an email</a><br />
+For research assistance, please contact the Reference Desk at 678-407-5064</p>
+</div>
+</body>
+
+</html>
